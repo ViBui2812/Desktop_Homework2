@@ -8,6 +8,7 @@ namespace Desktop_Homework2
 {
     internal static class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -21,13 +22,13 @@ namespace Desktop_Homework2
     }
     public class Sinhvien
     {
-        private string _x; //tên sinh viên
+        private string _tsv; //tên sinh viên
         private float _grade; //điểm
         private string _mssv; //mã số sinh viên
-        public string X
+        public string TSV
         {
-            get { return _x; }
-            set { _x = value; }
+            get { return _tsv; }
+            set { _tsv = value; }
         }
         public float GRADE
         {
@@ -41,18 +42,18 @@ namespace Desktop_Homework2
         }
         public Sinhvien()
         {
-            X = "";
+            TSV = "";
             GRADE = 0;
             MSSV = "";
         }
         public Sinhvien(string x_init, float grade_init, string mssv_init)
         {
-            X = x_init;
+            TSV = x_init;
             GRADE = grade_init;
             MSSV = mssv_init;
         }
     }
-    public class Lop
+    class Lop
     {
         private string _tl; //tên lớp
         private string[] _dssv;
@@ -61,14 +62,9 @@ namespace Desktop_Homework2
             get { return _tl; }
             set { _tl = value; }
         }
-        public Sinhvien DSSV
-        {
-            get { return _dssv; }
-            set { _dssv = value; }
-        }
         public Lop()
         {
-
+            
         }
     }
 }

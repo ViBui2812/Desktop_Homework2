@@ -45,9 +45,9 @@
             // 
             // txtTenSV
             // 
-            this.txtTenSV.Location = new System.Drawing.Point(158, 47);
+            this.txtTenSV.Location = new System.Drawing.Point(138, 55);
             this.txtTenSV.Name = "txtTenSV";
-            this.txtTenSV.Size = new System.Drawing.Size(214, 20);
+            this.txtTenSV.Size = new System.Drawing.Size(241, 20);
             this.txtTenSV.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -58,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 50);
+            this.label1.Location = new System.Drawing.Point(55, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 2;
@@ -67,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(112, 77);
+            this.label2.Location = new System.Drawing.Point(92, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
@@ -75,15 +75,15 @@
             // 
             // txtMSSV
             // 
-            this.txtMSSV.Location = new System.Drawing.Point(158, 74);
+            this.txtMSSV.Location = new System.Drawing.Point(138, 82);
             this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(214, 20);
+            this.txtMSSV.Size = new System.Drawing.Size(241, 20);
             this.txtMSSV.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(124, 101);
+            this.label3.Location = new System.Drawing.Point(104, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             // txtLop
             // 
-            this.txtLop.Location = new System.Drawing.Point(158, 98);
+            this.txtLop.Location = new System.Drawing.Point(138, 106);
             this.txtLop.Name = "txtLop";
             this.txtLop.Size = new System.Drawing.Size(72, 20);
             this.txtLop.TabIndex = 6;
@@ -99,7 +99,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 101);
+            this.label4.Location = new System.Drawing.Point(273, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 7;
@@ -107,14 +107,14 @@
             // 
             // txtDiem
             // 
-            this.txtDiem.Location = new System.Drawing.Point(300, 98);
+            this.txtDiem.Location = new System.Drawing.Point(307, 106);
             this.txtDiem.Name = "txtDiem";
             this.txtDiem.Size = new System.Drawing.Size(72, 20);
             this.txtDiem.TabIndex = 8;
             // 
             // btnNhap
             // 
-            this.btnNhap.Location = new System.Drawing.Point(420, 47);
+            this.btnNhap.Location = new System.Drawing.Point(400, 55);
             this.btnNhap.Name = "btnNhap";
             this.btnNhap.Size = new System.Drawing.Size(75, 32);
             this.btnNhap.TabIndex = 9;
@@ -123,7 +123,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(420, 86);
+            this.btnOK.Location = new System.Drawing.Point(400, 94);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 32);
             this.btnOK.TabIndex = 10;
@@ -133,7 +133,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(158, 134);
+            this.listBox1.Location = new System.Drawing.Point(138, 132);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(337, 251);
             this.listBox1.TabIndex = 11;
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(635, 444);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnNhap);
