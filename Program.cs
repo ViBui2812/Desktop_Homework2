@@ -23,48 +23,71 @@ namespace Desktop_Homework2
     public class Sinhvien
     {
         private string _tsv; //tên sinh viên
-        private float _grade; //điểm
+        private double _diem; //điểm
         private string _mssv; //mã số sinh viên
         public string TSV
         {
             get { return _tsv; }
             set { _tsv = value; }
         }
-        public float GRADE
+        public double DIEM
         {
-            get { return _grade; }
-            set { _grade = value; }
+            get { return _diem; }
+            set { _diem = value; }
         }
         public string MSSV
         {
             get { return _mssv; }
             set { _mssv = value; }
         }
+
         public Sinhvien()
         {
             TSV = "";
-            GRADE = 0;
+            DIEM = 0;
             MSSV = "";
         }
-        public Sinhvien(string x_init, float grade_init, string mssv_init)
+        public Sinhvien(string tsv_init, float grade_init, string mssv_init)
         {
-            TSV = x_init;
-            GRADE = grade_init;
+            TSV = tsv_init;
+            DIEM = grade_init;
             MSSV = mssv_init;
         }
     }
     class Lop
     {
-        private string _tl; //tên lớp
-        private string[] _dssv;
-        public string TL
+        private List<Sinhvien> _dssv;
+        public List<Sinhvien> DSSV
         {
-            get { return _tl; }
-            set { _tl = value; }
+            get { return _dssv; }
+            set { _dssv = value; }
         }
         public Lop()
         {
-            
+            DSSV = new List<Sinhvien>();
+        }
+
+        public Lop(List<Sinhvien> dssv_init)
+        {
+            DSSV = dssv_init;
+        }
+        public int Siso()
+        {
+            return DSSV.ToArray().Length;
+        }
+        public Sinhvien Top1()
+        {
+            double maxDiem = DSSV[0].DIEM;
+            Sinhvien maxSinhvien = DSSV[0];
+            for (int index = 1; index < DSSV.ToArray().Length; index++)
+            {
+                if (DSSV[index].DIEM >= maxDiem)
+                {
+                    maxDiem = DSSV[index].DIEM;
+                    maxSinhvien = DSSV[index];
+                }
+            }
+            return maxSinhvien;
         }
     }
 }
