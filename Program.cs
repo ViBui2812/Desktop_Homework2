@@ -47,7 +47,7 @@ namespace Desktop_Homework2
             DIEM = 0;
             MSSV = "";
         }
-        public Sinhvien(string tsv_init, float grade_init, string mssv_init)
+        public Sinhvien(string tsv_init, double grade_init, string mssv_init)
         {
             TSV = tsv_init;
             DIEM = grade_init;
@@ -73,18 +73,18 @@ namespace Desktop_Homework2
         }
         public int Siso()
         {
-            return DSSV.ToArray().Length;
+            return DSSV.Count();
         }
         public Sinhvien Top1()
         {
             double maxDiem = DSSV[0].DIEM;
             Sinhvien maxSinhvien = DSSV[0];
-            for (int index = 1; index < DSSV.ToArray().Length; index++)
+            for (int i = 0; i < DSSV.Count; i++)
             {
-                if (DSSV[index].DIEM >= maxDiem)
+                if (DSSV[i].DIEM > maxDiem)
                 {
-                    maxDiem = DSSV[index].DIEM;
-                    maxSinhvien = DSSV[index];
+                    maxDiem = DSSV[i].DIEM;
+                    maxSinhvien = DSSV[i];
                 }
             }
             return maxSinhvien;
