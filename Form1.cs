@@ -39,12 +39,20 @@ namespace Desktop_Homework2
             {
                 if (txtMSSV.Text == A.DSSV[i].MSSV)
                 {
-                    a.TSV = A.DSSV[i].TSV;
-                    a.DIEM = A.DSSV[i].DIEM;
-                    txtThongbao.Text = $"Sinh viên có MSSV là {A.DSSV[i].MSSV} vừa được cập nhật";
+                    A.DSSV[i].TSV = txtTenSV.Text;
+                    A.DSSV[i].DIEM = Double.Parse(txtDiem.Text);
+                    listBox3.Items.Add($"Sinh viên có MSSV là {A.DSSV[i].MSSV} vừa được cập nhật");
+                    A.DSSV[i] = a;
+                }
+                else
+                {
+                    A.DSSV.Add(a);
+                    break;
                 }
             }*/
             A.DSSV.Add(a);
+
+           
 
         }
 
@@ -53,7 +61,7 @@ namespace Desktop_Homework2
             Sinhvien TopSV = A.Top1();
             listBox1.Items.Clear();
             listBox2.Items.Clear();
-            /*if (txtThongbao.Text.Length != 0)
+            /*if ()
                 listBox2.Items.Add($"Sỉ số: {(A.Siso() - 1)}");
             else listBox2.Items.Add($"Sỉ số: {A.Siso()}");*/
             listBox1.Items.Add($"Tên Sinh Viên: {a.TSV}");
@@ -70,6 +78,11 @@ namespace Desktop_Homework2
         }
 
         private void txtMSSV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDiem_TextChanged(object sender, EventArgs e)
         {
 
         }
