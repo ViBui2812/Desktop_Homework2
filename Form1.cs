@@ -35,7 +35,8 @@ namespace Desktop_Homework2
             a.TSV = txtTenSV.Text;
             a.MSSV = txtMSSV.Text;
             a.DIEM = Double.Parse(txtDiem.Text);
-            /*for (int i = 0; i < A.DSSV.ToArray().Length; i++) //ý tưởng Check MSSV nếu trùng thì hiện thông báo
+            listBox3.Items.Clear();
+            for (int i = 0; i < A.DSSV.ToArray().Length; i++) //ý tưởng Check MSSV nếu trùng thì hiện thông báo
             {
                 if (txtMSSV.Text == A.DSSV[i].MSSV)
                 {
@@ -49,7 +50,7 @@ namespace Desktop_Homework2
                     A.DSSV.Add(a);
                     break;
                 }
-            }*/
+            }
             A.DSSV.Add(a);
 
            
@@ -61,9 +62,9 @@ namespace Desktop_Homework2
             Sinhvien TopSV = A.Top1();
             listBox1.Items.Clear();
             listBox2.Items.Clear();
-            /*if ()
+            if (listBox3.Items.ToString().Length > 0)
                 listBox2.Items.Add($"Sỉ số: {(A.Siso() - 1)}");
-            else listBox2.Items.Add($"Sỉ số: {A.Siso()}");*/
+            else listBox2.Items.Add($"Sỉ số: {A.Siso()}");
             listBox1.Items.Add($"Tên Sinh Viên: {a.TSV}");
             listBox1.Items.Add($"Mã Số Sinh Viên: {a.MSSV}");
             listBox1.Items.Add($"Điểm: {a.DIEM}");
